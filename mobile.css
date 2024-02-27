@@ -29,17 +29,20 @@ body {
 }
 
 nav {
-    display: none;
+    display: block;
     background-color: yellow;
     position: fixed;
     top: 0;
     right: 50%;
     width: 50%;
     height: 100vh;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s ease-in;
 }
 
 nav:target {
     display: block;
+    transform: translate(0, 0);
 }
 
 .hideNav {
